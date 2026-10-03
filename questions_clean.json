@@ -1,0 +1,302 @@
+[
+  {
+    "question_number": 1,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Value of |z| if z + |z| = 3 + i:",
+    "options": {
+      "A": "5/3",
+      "B": "5/4",
+      "C": "√34/3",
+      "D": "√41/4"
+    },
+    "answer": "A",
+    "solution": "Let z=x+iy. (x+√x²+y²) + iy = 3+i. y=1, solving gives |z|=5/3."
+  },
+  {
+    "question_number": 2,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Let α, β be roots of x² sin θ - x(sin θ cos θ + 1) + cos θ = 0. Sum of GP is:",
+    "options": {
+      "A": "1/(1+cosθ) - 1/(1-sinθ)",
+      "B": "1/(1-cosθ) - 1/(1+sinθ)",
+      "C": "Addition form",
+      "D": "Multiplication form"
+    },
+    "answer": "B",
+    "solution": "Roots are 1/sinθ and cosθ. Expansion matches option [B]."
+  },
+  {
+    "question_number": 3,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "If A, B invertible 3x3 and det(ABAT)=8, det(AB⁻¹)=8, then det(BA⁻¹BT) is:",
+    "options": {
+      "A": "1",
+      "B": "1/4",
+      "C": "16",
+      "D": "1/16"
+    },
+    "answer": "A",
+    "solution": "Property: |BA⁻¹Bᵀ| = |B|·|A⁻¹|·|Bᵀ|. Solving gives 1."
+  },
+  {
+    "question_number": 4,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "If ai is in AP and a1 + a3 = 10. If mean is 19/2, variance is:",
+    "options": {
+      "A": "200",
+      "B": "210",
+      "C": "220",
+      "D": "105"
+    },
+    "answer": "B",
+    "solution": "Using mean 19/2 and AP properties, variance results in 210."
+  },
+  {
+    "question_number": 5,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Convergence of series integral evaluates to:",
+    "options": {
+      "A": "(√2+1)/2",
+      "B": "3(√2+1)",
+      "C": "2√2",
+      "D": "3/2(√2 + 1)"
+    },
+    "answer": "D",
+    "solution": "Convergence of the integral sum yields 3/2(√2 + 1)."
+  },
+  {
+    "question_number": 6,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Foot of perpendicular from (2,0,5) on line (α, β, γ). Then α + β + γ is:",
+    "options": {
+      "A": "5",
+      "B": "3",
+      "C": "4",
+      "D": "2"
+    },
+    "answer": "A",
+    "solution": "Coordinates of foot result in sum α+β+γ = 5."
+  },
+  {
+    "question_number": 7,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "If f(x) = x³ - x²f'(1) + xf''(2) - f'''(3), then f(0) is:",
+    "options": {
+      "A": "f(1)+f(2)+f(3)",
+      "B": "f(3)-f(2)",
+      "C": "3f(1)+f(2)",
+      "D": "2f(0)-f(1)"
+    },
+    "answer": "C",
+    "solution": "Functional derivative values result in f(0) = 3f(1)+f(2)."
+  },
+  {
+    "question_number": 8,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Area of triangle whose vertices are roots of z³ + iz² + 2iz = 0:",
+    "options": {
+      "A": "1/2",
+      "B": "1",
+      "C": "3/2",
+      "D": "2"
+    },
+    "answer": "B",
+    "solution": "Vertices are (0,0), (0,1), (0,-2). Area = 1/2 * 1 * 2 = 1."
+  },
+  {
+    "question_number": 9,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Sum of squares of roots of x² + |2x - 3| - 4 = 0 is:",
+    "options": {
+      "A": "6",
+      "B": "8",
+      "C": "10",
+      "D": "12"
+    },
+    "answer": "C",
+    "solution": "Solving mod cases gives valid roots sum of squares = 10."
+  },
+  {
+    "question_number": 10,
+    "subject": "Mathematics",
+    "section": "A",
+    "question_type": "mcq_single",
+    "question_text": "Locus of centroid of triangle with vertices on (3x - 1)² + (3y)² = α: Section B: Numerical Value Questions (11-25)",
+    "options": {
+      "A": "Circle",
+      "B": "Parabola",
+      "C": "Ellipse",
+      "D": "Hyperbola"
+    },
+    "answer": "A",
+    "solution": "Centroid equation simplifies to (x-h)² + (y-k)² = r², a Circle."
+  },
+  {
+    "question_number": 11,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Inverse of A^2023 for large odd n yields transpose A: ________",
+    "options": {},
+    "answer": "A",
+    "solution": "Matrix power cycling leads to transpose A for large odd powers. ====================================================================== PAGE 5 ======================================================================"
+  },
+  {
+    "question_number": 12,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Area above parabola x² = y + 4 and right of axis: ________",
+    "options": {},
+    "answer": "C",
+    "solution": "Integration above parabola results in 4√6 - 44/3."
+  },
+  {
+    "question_number": 13,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Calculation using point-line formula results in distance: ________",
+    "options": {},
+    "answer": "28",
+    "solution": "Distance formula for point-line in 3D yields 28."
+  },
+  {
+    "question_number": 14,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "If ratio sin(α+β)/sin(α-β) = 2/3, find k: ________",
+    "options": {},
+    "answer": "5",
+    "solution": "tanα/tanβ = 5, thus k = 5."
+  },
+  {
+    "question_number": 15,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Mapping combinations under specific constraints: ________",
+    "options": {},
+    "answer": "5^6*15",
+    "solution": "Constraints result in Paper option [B] combinations."
+  },
+  {
+    "question_number": 16,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Applying variance formula to given frequency data: ________",
+    "options": {},
+    "answer": "18",
+    "solution": "Frequency data variance formula yields 18."
+  },
+  {
+    "question_number": 17,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Differential equation result for slope problem: ________",
+    "options": {},
+    "answer": "xy^3=C",
+    "solution": "Internal section ratio slope yields xy³ = C."
+  },
+  {
+    "question_number": 18,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Ratio of probabilities using union formula P(A∪B): ________",
+    "options": {},
+    "answer": "3/2",
+    "solution": "Probability ratio result is 3/2."
+  },
+  {
+    "question_number": 19,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Differentiation results in final numeric value: ________",
+    "options": {},
+    "answer": "496",
+    "solution": "substitution results in value 496."
+  },
+  {
+    "question_number": 20,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Count of multiples of 3 in maximum product set: ________",
+    "options": {},
+    "answer": "15/44",
+    "solution": "Count of multiples in maximum product results in 15/44."
+  },
+  {
+    "question_number": 21,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Sum of digits for 72nd六-digit increasing sequence: ________",
+    "options": {},
+    "answer": "21",
+    "solution": "Digits sum for ordered sequence S = 21."
+  },
+  {
+    "question_number": 22,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Solving telescoping series conversion for f(n): ________",
+    "options": {},
+    "answer": "10",
+    "solution": "Conversion gives c=10, thus m = 10."
+  },
+  {
+    "question_number": 23,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Evaluating functional form |f(-2)| for derivative 2: ________",
+    "options": {},
+    "answer": "3",
+    "solution": "Functional evaluation |-4+1| = 3."
+  },
+  {
+    "question_number": 24,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Sum of 9 terms of constant value in GP: ________",
+    "options": {},
+    "answer": "81",
+    "solution": "GP constant property results in sum 81."
+  },
+  {
+    "question_number": 25,
+    "subject": "Mathematics",
+    "section": "B",
+    "question_type": "numerical",
+    "question_text": "Equating coefficients results in constant (ab)²: ________",
+    "options": {},
+    "answer": "1",
+    "solution": "Coefficients result in constant (ab)² = 1."
+  }
+]

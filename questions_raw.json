@@ -1,0 +1,452 @@
+[
+  {
+    "question_number": "1",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "V JEE Main Mathematics Sample Paper 03 alue of |z| if z + |z| = 3 + i: A. (A) 5/3 B. (B) 5/4 C. (C) √34/3 D. (D) √41/4",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "2",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Let α, β be roots of x² sin θ - x(sin θ cos θ + 1) + cos θ = 0. Sum of GP is: A. (A) 1/(1+cosθ) - 1/(1-sinθ) B. (B) 1/(1-cosθ) - 1/(1+sinθ) C. (C) Addition form D. (D) Multiplication form",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "3",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "If A, B invertible 3x3 and det(ABAT)=8, det(AB⁻¹)=8, then det(BA⁻¹BT) is: A. (A) 1 B. (B) 1/4 C. (C) 16 D. (D) 1/16",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "4",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "If ai is in AP and a1 + a3 = 10. If mean is 19/2, variance is: A. (A) 200 B. (B) 210 C. (C) 220 D. (D) 105",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "5",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Convergence of series integral evaluates to: A. (A) (√2+1)/2 B. (B) 3(√2+1) C. (C) 2√2 D. (D) 3/2(√2 + 1)",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "6",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Foot of perpendicular from (2,0,5) on line (α, β, γ). Then α + β + γ is: A. (A) 5 B. (B) 3 ====================================================================== ====================================================================== C. (C) 4 D. (D) 2",
+    "options": {},
+    "page_number": 1
+  },
+  {
+    "question_number": "7",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "If f(x) = x³ - x²f'(1) + xf''(2) - f'''(3), then f(0) is: A. (A) f(1)+f(2)+f(3) B. (B) f(3)-f(2) C. (C) 3f(1)+f(2) D. (D) 2f(0)-f(1)",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "8",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Area of triangle whose vertices are roots of z³ + iz² + 2iz = 0: A. (A) 1/2 B. (B) 1 C. (C) 3/2 D. (D) 2",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "9",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Sum of squares of roots of x² + |2x - 3| - 4 = 0 is: A. (A) 6 B. (B) 8 C. (C) 10 D. (D) 12",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "10",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Locus of centroid of triangle with vertices on (3x - 1)² + (3y)² = α: A. (A) Circle B. (B) Parabola C. (C) Ellipse D. (D) Hyperbola Section B: Numerical Value Questions (11-25)",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "11",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Inverse of A^2023 for large odd n yields transpose A: ________",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "12",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Area above parabola x² = y + 4 and right of axis: ________",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "13",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Calculation using point-line formula results in distance: ________ ====================================================================== ======================================================================",
+    "options": {},
+    "page_number": 2
+  },
+  {
+    "question_number": "14",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "If ratio sin(α+β)/sin(α-β) = 2/3, find k: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "15",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Mapping combinations under specific constraints: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "16",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Applying variance formula to given frequency data: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "17",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Differential equation result for slope problem: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "18",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Ratio of probabilities using union formula P(A∪B): ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "19",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Differentiation results in final numeric value: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "20",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Count of multiples of 3 in maximum product set: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "21",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Sum of digits for 72nd六-digit increasing sequence: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "22",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Solving telescoping series conversion for f(n): ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "23",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Evaluating functional form |f(-2)| for derivative 2: ________",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "24",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Sum of 9 terms of constant value in GP: ________ ====================================================================== ======================================================================",
+    "options": {},
+    "page_number": 3
+  },
+  {
+    "question_number": "25",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "Equating coefficients results in constant (ab)²: ________ Answer Key & Detailed Explanation",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "1",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[A] Let z=x+iy. (x+√x²+y²) + iy = 3+i. y=1, solving gives |z|=5/3.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "2",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[B] Roots are 1/sinθ and cosθ. Expansion matches option [B].",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "3",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[A] Property: |BA⁻¹Bᵀ| = |B|·|A⁻¹|·|Bᵀ|. Solving gives 1.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "4",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[B] Using mean 19/2 and AP properties, variance results in 210.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "5",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[D] Convergence of the integral sum yields 3/2(√2 + 1).",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "6",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[A] Coordinates of foot result in sum α+β+γ = 5.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "7",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[C] Functional derivative values result in f(0) = 3f(1)+f(2).",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "8",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[B] Vertices are (0,0), (0,1), (0,-2). Area = 1/2 * 1 * 2 = 1.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "9",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[C] Solving mod cases gives valid roots sum of squares = 10.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "10",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[A] Centroid equation simplifies to (x-h)² + (y-k)² = r², a Circle.",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "11",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[A] Matrix power cycling leads to transpose A for large odd powers. ====================================================================== ======================================================================",
+    "options": {},
+    "page_number": 4
+  },
+  {
+    "question_number": "12",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[C] Integration above parabola results in 4√6 - 44/3.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "13",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[28] Distance formula for point-line in 3D yields 28.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "14",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[5] tanα/tanβ = 5, thus k = 5.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "15",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[5^6*15] Constraints result in Paper option [B] combinations.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "16",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[18] Frequency data variance formula yields 18.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "17",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[xy^3=C] Internal section ratio slope yields xy³ = C.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "18",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[3/2] Probability ratio result is 3/2.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "19",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[496] substitution results in value 496.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "20",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[15/44] Count of multiples in maximum product results in 15/44.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "21",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[21] Digits sum for ordered sequence S = 21.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "22",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[10] Conversion gives c=10, thus m = 10.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "23",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[3] Functional evaluation |-4+1| = 3.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "24",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[81] GP constant property results in sum 81.",
+    "options": {},
+    "page_number": 5
+  },
+  {
+    "question_number": "25",
+    "subject": null,
+    "section": null,
+    "question_type": "section_b",
+    "question_text": "[1] Coefficients result in constant (ab)² = 1.",
+    "options": {},
+    "page_number": 5
+  }
+]
