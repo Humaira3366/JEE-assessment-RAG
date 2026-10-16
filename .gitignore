@@ -7,3 +7,6 @@ __pycache__/
 raw_extracted.txt
 *.log
 data/sample/embeddings.npy
+.env
+.env.*
+!.env.example

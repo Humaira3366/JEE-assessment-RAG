@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "question": "The SI unit of electric current is:",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "correct_answer": "Ampere",
+    "subject": "Physics",
+    "chapter": "Current Electricity",
+    "topic": "Electric Current",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "question": "According to Ohm's law, the relation between voltage V, current I and resistance R is:",
+    "options": ["V = IR", "V = I/R", "V = R/I", "V = I + R"],
+    "correct_answer": "V = IR",
+    "subject": "Physics",
+    "chapter": "Current Electricity",
+    "topic": "Ohm's Law",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3,
+    "question": "The acceleration due to gravity near the Earth's surface is approximately:",
+    "options": ["9.8 m/s²", "98 m/s²", "0.98 m/s²", "8.9 m/s²"],
+    "correct_answer": "9.8 m/s²",
+    "subject": "Physics",
+    "chapter": "Gravitation",
+    "topic": "Acceleration Due to Gravity",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "question": "The SI unit of force is:",
+    "options": ["Joule", "Newton", "Watt", "Pascal"],
+    "correct_answer": "Newton",
+    "subject": "Physics",
+    "chapter": "Laws of Motion",
+    "topic": "Force",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 5,
+    "question": "The dimensional formula of velocity is:",
+    "options": ["[LT⁻¹]", "[LT⁻²]", "[MLT⁻¹]", "[ML⁻¹T⁻¹]"],
+    "correct_answer": "[LT⁻¹]",
+    "subject": "Physics",
+    "chapter": "Units and Measurements",
+    "topic": "Dimensions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "The time period of a simple pendulum depends mainly on:",
+    "options": ["Mass of bob", "Length of pendulum", "Shape of bob", "Colour of bob"],
+    "correct_answer": "Length of pendulum",
+    "subject": "Physics",
+    "chapter": "Oscillations",
+    "topic": "Simple Pendulum",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 7,
+    "question": "The derivative of x² with respect to x is:",
+    "options": ["x", "2x", "x²", "2"],
+    "correct_answer": "2x",
+    "subject": "Mathematics",
+    "chapter": "Differentiation",
+    "topic": "Derivatives",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "The value of sin 90° is:",
+    "options": ["0", "1", "-1", "1/2"],
+    "correct_answer": "1",
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "question": "The slope of the line y = 3x + 2 is:",
+    "options": ["2", "3", "5", "1"],
+    "correct_answer": "3",
+    "subject": "Mathematics",
+    "chapter": "Coordinate Geometry",
+    "topic": "Straight Lines",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 10,
+    "question": "The probability of getting a head when a fair coin is tossed once is:",
+    "options": ["0", "1/2", "1", "2"],
+    "correct_answer": "1/2",
+    "subject": "Mathematics",
+    "chapter": "Probability",
+    "topic": "Basic Probability",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 11,
+    "question": "The value of 2³ is:",
+    "options": ["6", "8", "9", "12"],
+    "correct_answer": "8",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "topic": "Powers",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "If the roots of x² - 5x + 6 = 0 are α and β, then α + β is:",
+    "options": ["2", "3", "5", "6"],
+    "correct_answer": "5",
+    "subject": "Mathematics",
+    "chapter": "Algebra",
+    "topic": "Quadratic Equations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "The atomic number of carbon is:",
+    "options": ["6", "8", "12", "14"],
+    "correct_answer": "6",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "topic": "Atomic Number",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "The chemical formula of water is:",
+    "options": ["CO₂", "H₂O", "O₂", "H₂"],
+    "correct_answer": "H₂O",
+    "subject": "Chemistry",
+    "chapter": "Molecular Structure",
+    "topic": "Chemical Formula",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "The pH of a neutral solution at 25°C is:",
+    "options": ["0", "5", "7", "14"],
+    "correct_answer": "7",
+    "subject": "Chemistry",
+    "chapter": "Equilibrium",
+    "topic": "pH",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 16,
+    "question": "Which particle has a negative charge?",
+    "options": ["Proton", "Neutron", "Electron", "Nucleus"],
+    "correct_answer": "Electron",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "topic": "Subatomic Particles",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "correct_answer": "Nitrogen",
+    "subject": "Chemistry",
+    "chapter": "Environmental Chemistry",
+    "topic": "Atmosphere",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "The molar mass of water is approximately:",
+    "options": ["16 g/mol", "18 g/mol", "20 g/mol", "22 g/mol"],
+    "correct_answer": "18 g/mol",
+    "subject": "Chemistry",
+    "chapter": "Some Basic Concepts of Chemistry",
+    "topic": "Molar Mass",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following is a noble gas?",
+    "options": ["Oxygen", "Nitrogen", "Neon", "Chlorine"],
+    "correct_answer": "Neon",
+    "subject": "Chemistry",
+    "chapter": "Periodic Classification",
+    "topic": "Noble Gases",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "The oxidation state of oxygen in most of its compounds is:",
+    "options": ["+1", "-1", "+2", "-2"],
+    "correct_answer": "-2",
+    "subject": "Chemistry",
+    "chapter": "Redox Reactions",
+    "topic": "Oxidation State",
+    "difficulty": "Medium"
+  } 
+]

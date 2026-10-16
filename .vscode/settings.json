@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./jee_assessment updated zip file"
+    ],
+    "python.autoComplete.extraPaths": [
+        "./jee_assessment updated zip file"
+    ]
+}
