@@ -1,221 +1,102 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+import json
 
-from retrieval import load_questions, retrieve_questions
-from validation import validate_question
-from evaluation import evaluate_selected_questions
-from assessment_generator import generate_assessment
-from adaptive import select_adaptive_questions
+from rag_citation import retrieve_with_citations
 
-from performance_history import (
-    create_performance_record,
-    save_performance_record,
-    get_performance_history,
-    get_cumulative_topic_feedback
-)
 
-@api_view(["GET"])
-def get_questions(request):
-
-    questions = load_questions()
-
-    subject = request.GET.get("subject")
-    chapter = request.GET.get("chapter")
-    difficulty = request.GET.get("difficulty")
-    number = int(request.GET.get("number", 5))
-
-    results = retrieve_questions(
-        questions,
-        subject=subject,
-        chapter=chapter,
-        difficulty=difficulty,
-        number=number
+def get_db_connection():
+    import psycopg2
+    import os
+    from dotenv import load_dotenv
+    # Ensure environment variables are loaded
+    load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
+    
+    return psycopg2.connect(
+        host="aws-0-ap-northeast-1.pooler.supabase.com",
+        port=5432,
+        database="postgres",
+        user="postgres.knbiciilhfomwfzxqthl",
+        password="6jkrc39v@Hum",
+        sslmode="require"
     )
 
-    valid_questions = []
 
-    for question in results:
-
-        valid, errors = validate_question(question)
-
-        if valid:
-            valid_questions.append(question)
-
-    questions_for_user = []
-
-    for question in valid_questions:
-
-        question_copy = question.copy()
-        question_copy.pop("correct_answer", None)
-
-        questions_for_user.append(question_copy)
-
-    return Response(questions_for_user)
-
-
-@api_view(["POST"])
-def evaluate_answers(request):
-
-    questions = load_questions()
-
-    question_ids = request.data.get(
-        "question_ids",
-        []
-    )
-
-    student_answers = request.data.get(
-        "answers",
-        {}
-    )
-
-    question_ids = [
-        int(question_id)
-        for question_id in question_ids
-    ]
-
-    valid_question_ids = {
-        question["id"]
-        for question in questions
-    }
-
-    invalid_ids = [
-        question_id
-        for question_id in question_ids
-        if question_id not in valid_question_ids
-    ]
-
-    if invalid_ids:
-        return Response({
-            "error": "Invalid question ID(s).",
-            "invalid_ids": invalid_ids
-        }, status=400)
-
-    student_answers = {
-        int(question_id): answer
-        for question_id, answer in student_answers.items()
-    }
-
-    for question_id, answer in student_answers.items():
-
-        question = next(
-            (
-                q for q in questions
-                if q["id"] == question_id
-            ),
-            None
-        )
-
-        if question and question.get("question_type") == "mcq_single" and question.get("options") and answer not in question["options"]:
-            return Response({
-                "error": "Invalid answer.",
-                "question_id": question_id,
-                "answer": answer
-            }, status=400)
-
-    result = evaluate_selected_questions(
-        questions,
-        question_ids,
-        student_answers
-    )
-
-    time_taken_minutes = request.data.get(
-        "time_taken_minutes",
-        0
-    )
-
-    history_record = create_performance_record(
-        result,
-        time_taken_minutes
-    )
-
-    save_performance_record(
-        history_record
-    )
-
-    return Response(result)
-
-@api_view(["GET"])
-def get_history(request):
-
-    history = get_performance_history()
-
-    return Response(history)
-
-@api_view(["POST"])
-def generate_test(request):
-
-    questions = load_questions()
-
-    subject = request.data.get("subject")
-    chapter = request.data.get("chapter")
-    difficulty = request.data.get("difficulty")
-    number = int(request.data.get("number", 5))
-    is_jee_paper = request.data.get("is_jee_paper", False)
-
-    result = generate_assessment(
-        questions,
-        subject=subject,
-        chapter=chapter,
-        difficulty=difficulty,
-        number=number,
-        is_jee_paper=is_jee_paper
-    )
-
-    return Response(result)
+def load_questions():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, subject, question_number, question_type, question_text, options, answer, solution, chapter_topic FROM questions")
+    rows = cursor.fetchall()
+    
+    questions = []
+    for row in rows:
+        options = row[5]
+        if isinstance(options, str):
+            import json
+            try:
+                options = json.loads(options)
+            except Exception:
+                options = {}
+                
+        questions.append({
+            "id": row[0],
+            "subject": row[1],
+            "question_number": row[2],
+            "question_type": row[3],
+            "question_text": row[4],
+            "options": options,
+            "correct_answer": row[6],
+            "solution": row[7],
+            "chapter": row[8]
+        })
+        
+    cursor.close()
+    conn.close()
+    return questions
 
 
-@api_view(["POST"])
-def generate_adaptive_test(request):
+def retrieve_questions(
+    questions,
+    subject=None,
+    chapter=None,
+    difficulty=None,
+    number=5
+):
+    results = []
 
-    questions = load_questions()
+    for question in questions:
 
-    topic_feedback = request.data.get("topic_feedback")
-    use_cumulative = request.data.get("cumulative", False)
-
-    # If no specific feedback provided or cumulative requested, use aggregated history
-    if not topic_feedback or use_cumulative:
-        topic_feedback = get_cumulative_topic_feedback()
-
-    number = int(request.data.get("number", 10))
-
-    previous_question_ids = request.data.get("previous_question_ids", [])
-    if not previous_question_ids:
-        # Automatically collect question IDs from all past test records to prevent duplicates
-        for rec in get_performance_history():
-            # If past question IDs weren't directly logged, we can exclude if stored
-            pass
-
-    selected_questions = select_adaptive_questions(
-        questions,
-        topic_feedback,
-        number=number,
-        previous_question_ids=previous_question_ids
-    )
-
-    questions_for_user = []
-
-    for question in selected_questions:
-
-        valid, errors = validate_question(question)
-
-        if not valid:
+        if subject and question.get("subject", "").lower() != subject.lower():
             continue
 
-        question_copy = question.copy()
+        if chapter and question.get("chapter", "").lower() != chapter.lower():
+            continue
 
-        # Never expose the correct answer
-        question_copy.pop(
-            "correct_answer",
-            None
+        if difficulty and question.get("difficulty", "").lower() != difficulty.lower():
+            continue
+
+        results.append(question)
+
+    if len(results) < number:
+        print(
+            f"Warning: Only {len(results)} questions found, "
+            f"but {number} were requested."
         )
 
-        questions_for_user.append(
-            question_copy
-        )
+    return results[:number]
 
-    return Response({
-        "subject": "Adaptive Assessment",
-        "type": "adaptive",
-        "number_of_questions": len(questions_for_user),
-        "questions": questions_for_user
-    })
+
+def retrieve_questions_with_citations(
+    questions,
+    query=None,
+    subject=None,
+    chapter=None,
+    difficulty=None,
+    number=5,
+):
+    return retrieve_with_citations(
+        questions,
+        query=query,
+        subject=subject,
+        chapter=chapter,
+        difficulty=difficulty,
+        number=number,
+    )

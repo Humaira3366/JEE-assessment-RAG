@@ -1,69 +1,48 @@
-# JEE Assessment AI — RAG MVP
+from rag_citation import attach_question_citation, retrieve_with_citations
 
-A reproducible MVP for a JEE question corpus, retrieval and ground-truth-first answer evaluation.
 
-## What is implemented
+def test_attach_question_citation():
+    question = {
+        "id": 1,
+        "subject": "Physics",
+        "chapter": "Electrostatics",
+        "question_text": "What is the SI unit of electric charge?",
+        "solution": "The SI unit of charge is the coulomb.",
+    }
 
-1. PDF question extraction/parsing
-2. Clean 25-question sample corpus
-3. Answer-key and reference-solution storage
-4. PostgreSQL/pgvector schema for Supabase
-5. Supabase ingestion script
-6. Local embedding generation using BGE-large-en-v1.5
-7. Local semantic retrieval
-8. Ground-truth-first answer evaluation
-9. Streamlit evaluation demo
-10. Automated tests
+    result = attach_question_citation(question)
 
-## Architecture
+    assert result["citations"][0]["source_type"] == "jee_question_bank"
+    assert "Q1" in result["citations"][0]["title"]
+    assert "coulomb" in result["citations"][0]["snippet"].lower()
 
-```text
-JEE PDF
-  ↓
-Extraction + parsing
-  ↓
-questions_clean.json
-  ↓
-Validation
-  ├──→ Supabase PostgreSQL
-  │       ↓
-  │     pgvector
-  │       ↓
-  │     Retrieval
-  │
-  └──→ Embedding model
-          ↓
-      Semantic search
 
-Student answer
-  ↓
-Stored answer key + reference solution
-  ↓
-Correctness / score
-  ↓
-Feedback explanation
-```
+def test_retrieve_with_citations_filters_and_adds_citation_metadata():
+    questions = [
+        {
+            "id": 11,
+            "subject": "Physics",
+            "chapter": "Electricity",
+            "question_text": "State Ohm's law.",
+            "solution": "Voltage is directly proportional to current at constant temperature.",
+        },
+        {
+            "id": 12,
+            "subject": "Chemistry",
+            "chapter": "Acids",
+            "question_text": "What is the pH of pure water?",
+            "solution": "Pure water has pH 7.",
+        },
+    ]
 
-## Run locally
+    result = retrieve_with_citations(questions, query="ohm law voltage current", subject="Physics", number=1)
 
-```bash
-pip install -r requirements.txt
-pytest -q
-streamlit run app/app.py
-```
+    assert len(result) == 1
+    assert result[0]["citations"][0]["subject"] == "Physics"
+    assert result[0]["id"] == 11
 
-For Supabase ingestion, create the tables using `database/schema.sql`, create a local `.env` from `.env.example`, then run:
 
-```bash
-python database/ingest.py
-```
-
-For embeddings:
-
-```bash
-python embeddings/build_embeddings.py
-```
-
-## Security
-
-Never commit `.env`, passwords, raw PDFs, or restricted/commercial source material. The sample corpus should only be redistributed when its source/license permits it.
+if __name__ == "__main__":
+    test_attach_question_citation()
+    test_retrieve_with_citations_filters_and_adds_citation_metadata()
+    print("rag citation tests passed")
